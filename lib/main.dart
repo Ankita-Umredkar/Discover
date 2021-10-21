@@ -4,6 +4,8 @@ import 'package:navbar/profile.dart';
 import 'package:navbar/setting.dart';
 import 'package:navbar/MyDrawer.dart';
 
+import 'dropdown/shop.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -37,7 +39,7 @@ class _MyAppState extends State<MyApp> {
       theme: darkThemeEnabled ? ThemeData.dark() : ThemeData.light(),
       // theme: darkThemeEnabled ? ThemeData.dark() : ThemeData.light(),
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: Shop(),
     );
   }
 

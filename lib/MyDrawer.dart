@@ -36,7 +36,7 @@ class _MyDrawerState extends State<MyDrawer> {
                         width: 60,
                         height: 60,
                         child: CircleAvatar(
-                            backgroundImage: AssetImage('images/user_5.png')),
+                            backgroundImage: AssetImage('assets/images/user_5.png')),
                       ),
                       SizedBox(
                         height: 15,

@@ -1,6 +1,5 @@
 // ignore_for_file: import_of_legacy_library_into_null_safe, unused_field
 
-
 import 'package:flutter/material.dart';
 
 class Profile extends StatefulWidget {
@@ -84,7 +83,6 @@ class _ProfileState extends State<Profile> {
     );
   }
 
- 
   Widget _detailsCard() {
     return Padding(
       padding: const EdgeInsets.all(16.0),
@@ -94,40 +92,35 @@ class _ProfileState extends State<Profile> {
           children: [
             // row for each details
             ListTile(
-
               leading: Icon(
                 Icons.email,
                 color: Colors.blueAccent,
               ),
               title: Text("user1@gmail.com"),
             ),
-             SizedBox(height: 5,),
+
             Divider(
               height: 0.2,
               color: Colors.black,
             ),
-
-            ListTile(
-
-              leading: Icon(
-                Icons.pin,
-                color: Colors.blueAccent,
-
-              ),
-              title: Text("440029"),
-            ),
-            SizedBox(height: 5,),
-            Divider(
-              height: 0.2,
-              color: Colors.black,
-            ),
-             SizedBox(height: 5,),
             ListTile(
               leading: Icon(
                 Icons.location_city,
                 color: Colors.blueAccent,
               ),
               title: Text("Mumbai"),
+            ),
+            Divider(
+              height: 0.2,
+              color: Colors.black,
+            ),
+
+            ListTile(
+              leading: Icon(
+                Icons.pin,
+                color: Colors.blueAccent,
+              ),
+              title: Text("440029"),
             ),
           ],
         ),

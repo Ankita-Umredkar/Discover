@@ -19,48 +19,53 @@ class _SettingState extends State<Setting> {
             SizedBox(
               height: 20,
             ),
-            nameTextField(),
+            // nameTextField(),
+            // SizedBox(
+            //   height: 20,
+            // ),
+            // emailTextField(),
+            // SizedBox(
+            //   height: 20,
+            // ),
+
+            locationTextField(),
             SizedBox(
               height: 20,
             ),
-            emailTextField(),
-            SizedBox(
-              height: 20,
-            ),
-            
             pincodeTextField(),
             SizedBox(
               height: 20,
             ),
-            locationTextField(),
-            SizedBox(height: 20,),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 OutlineButton(
                   padding: EdgeInsets.symmetric(horizontal: 40),
                   shape: RoundedRectangleBorder(
-                    borderRadius:BorderRadius.circular(20),),
-                    onPressed:(){},
-                    child:Text('CANCEL', style:TextStyle(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  onPressed: () {},
+                  child: Text(
+                    'CANCEL',
+                    style: TextStyle(
                       fontSize: 14,
                       letterSpacing: 2.2,
                       color: Colors.black,
                     ),
                   ),
                 ),
-
-                RaisedButton(onPressed: (){
-                  
-                },
-                color: Colors.blue,
-                padding: EdgeInsets.symmetric(horizontal:50),
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                child:Text('SAVE',
-                style:TextStyle(fontSize: 14,
-                letterSpacing: 2.2,
-                color: Colors.white),
-                ),),
+                RaisedButton(
+                  onPressed: () {},
+                  color: Colors.blue,
+                  padding: EdgeInsets.symmetric(horizontal: 50),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20)),
+                  child: Text(
+                    'SAVE',
+                    style: TextStyle(
+                        fontSize: 14, letterSpacing: 2.2, color: Colors.white),
+                  ),
+                ),
               ],
             )
           ],
@@ -76,8 +81,7 @@ class _SettingState extends State<Setting> {
           CircleAvatar(
               radius: 80.0,
               // ignore: unnecessary_null_comparison
-              backgroundImage: AssetImage('images/user_5.png')
-              ),
+              backgroundImage: AssetImage('images/user_5.png')),
           Positioned(
             bottom: 20.0,
             right: 20.0,
@@ -136,52 +140,51 @@ class _SettingState extends State<Setting> {
     );
   }
 
+  // Widget nameTextField() {
+  //   return TextFormField(
+  //     decoration: InputDecoration(
+  //       border: OutlineInputBorder(
+  //         borderSide: BorderSide(color: Colors.blue),
+  //       ),
+  //       focusedBorder: OutlineInputBorder(
+  //         borderSide: BorderSide(
+  //           color: Colors.blueAccent,
+  //           width: 2,
+  //         ),
+  //       ),
+  //       prefixIcon: Icon(
+  //         Icons.person,
+  //         color: Colors.blue,
+  //       ),
+  //       labelText: 'Name',
+  //       helperText: "Name can't be empty",
+  //       hintText: 'User1',
+  //     ),
+  //   );
+  // }
 
-  Widget nameTextField() {
-    return TextFormField(
-      decoration: InputDecoration(
-        border: OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.blue),
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-            color: Colors.blueAccent,
-            width: 2,
-          ),
-        ),
-        prefixIcon: Icon(
-          Icons.person,
-          color: Colors.blue,
-        ),
-        labelText: 'Name',
-        helperText: "Name can't be empty",
-        hintText: 'User1',
-      ),
-    );
-  }
-
-  Widget emailTextField() {
-    return TextFormField(
-      decoration: InputDecoration(
-        border: OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.blue),
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-            color: Colors.blueAccent,
-            width: 2,
-          ),
-        ),
-        prefixIcon: Icon(
-          Icons.email,
-          color: Colors.blue,
-        ),
-        labelText: 'Email',
-        helperText: "Email can't be empty",
-        hintText: 'user123@gmail.com',
-      ),
-    );
-  }
+  // Widget emailTextField() {
+  //   return TextFormField(
+  //     decoration: InputDecoration(
+  //       border: OutlineInputBorder(
+  //         borderSide: BorderSide(color: Colors.blue),
+  //       ),
+  //       focusedBorder: OutlineInputBorder(
+  //         borderSide: BorderSide(
+  //           color: Colors.blueAccent,
+  //           width: 2,
+  //         ),
+  //       ),
+  //       prefixIcon: Icon(
+  //         Icons.email,
+  //         color: Colors.blue,
+  //       ),
+  //       labelText: 'Email',
+  //       helperText: "Email can't be empty",
+  //       hintText: 'user123@gmail.com',
+  //     ),
+  //   );
+  // }
 
   Widget pincodeTextField() {
     return TextFormField(
@@ -207,7 +210,7 @@ class _SettingState extends State<Setting> {
   }
 
   Widget locationTextField() {
-   return TextFormField(
+    return TextFormField(
       decoration: InputDecoration(
         border: OutlineInputBorder(
           borderSide: BorderSide(color: Colors.blue),
@@ -228,7 +231,6 @@ class _SettingState extends State<Setting> {
       ),
     );
   }
-
 }
  
 
